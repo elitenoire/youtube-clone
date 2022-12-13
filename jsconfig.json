@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "baseUrl": "./",
+        "paths": {
+            "~/*": [
+                "*"
+            ],
+            "~public/*": [
+                "public/*"
+            ],
+            "~src/*": [
+                "src/*"
+            ],
+            "~components/*": [
+                "src/components/*"
+            ],
+            "~assets/*": [
+                "src/assets/*"
+            ],
+            "~lib/*": [
+                "src/lib/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
