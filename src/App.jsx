@@ -1,10 +1,19 @@
-import { HamburgerSvg } from '~lib/icons'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import AppLayout from '~components/AppLayout'
+import Home from '~src/pages/Home'
 
 function App() {
   return (
-    <div>
-      YOUTUBE CLONE <HamburgerSvg />
-    </div>
+    <>
+      <div>HELLO</div>
+      <Router>
+        <Routes>
+          <Route path={import.meta.env.BASE_URL} element={<AppLayout />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </Router>
+    </>
   )
 }
 

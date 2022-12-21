@@ -15,7 +15,7 @@ const alias = Object.entries(config.compilerOptions.paths).reduce((acc, [key, [v
 
 // https://vitejs.dev/config/
 export const viteConfig = defineConfig({
-  base: '/youtube-clone/',
+  base: '/youtube-clone',
   resolve: {
     alias,
   },
